@@ -1,4 +1,5 @@
 /*------------------------*/ 
+// I check code output on F12
 (FUNCTION EXPRESSION)
 
 

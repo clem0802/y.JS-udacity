@@ -13,8 +13,8 @@ console.log(sum); // 3
 function laugh(num){
     var ha = "";
     for(var i=0; i<num; i++){
-        ha+="ha";
-        string=ha+"!"
+        ha += "ha";
+        string = ha+"!"
     }
     return string;
 }
