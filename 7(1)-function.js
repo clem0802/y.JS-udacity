@@ -37,10 +37,14 @@ console.log(bookTitle)
 
 
 /*------------------------*/
-// Create a function called buildTriangle() that will 
-// accept an input (the triangle at its widest width) and will build a triangle.
-
-
+// x and y are PARAMETERS of this function
+// 5 and 9 are ARGUMENTS passed into this function
+function findAverage(x, y) {
+  var answer = (x + y) / 2;
+  return answer;
+}
+var avg = findAverage(5, 9); 
+console.log(avg); // 7
 
 
 /*------------------------*/
@@ -57,6 +61,7 @@ addTwo();
 x = x + 1;
 console.log(x); // 4
 
+
 // (2) the global var x is incremented by 1
 // the global var's original value was 1, then ++, so it is 2 in console.log()
 // the addTwo() function has no effect outside the fuction
@@ -67,3 +72,10 @@ function addTwo() {
 addTwo();
 x = x + 1;
 console.log(x); // 2
+
+
+
+
+
+
+

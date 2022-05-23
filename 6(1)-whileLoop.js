@@ -35,24 +35,24 @@ while (x <=20) {
 // 19
 // James
 
-/*----------------------------*/ (?? might crash the computer)
+/*----------------------------*/ 
 var num = 99;
-while (num >=0) {
+while (num >=0 && num <= 99) {
     // check value of num
     // print lyrics using num
     // don't forget to check pluralization on the last line!
     // decrement num
     if(num > 2){
         sub = num -1
-        console.log(`${num} bottles of juice on the wall! Take one down, now ${sub} botttles on the wall.`)
+        console.log(`${num} bottles of juice. Take one down, now ${sub} botttles now.`)
     } 
     else if(num == 2){
         sub = num -1
-        console.log(`${num} bottles of juice on the wall! Take one down, now ${sub} botttle on the wall.`)
+        console.log(`${num} bottles of juice. Take one down, now ${sub} botttle now.`)
     }
     else if(num === 1){
         sub = num -1
-        console.log(`${num} bottle of juice on the wall! Take one down, now ${sub} botttle on the wall.`)
+        console.log(`${num} bottle of juice. Take one down, now ${sub} botttle now.`)
     }
     num-=1
 }
@@ -64,7 +64,7 @@ while(countdown >= 0){
     if(countdown === 5){
         console.log("Orbiter transfers from ground to internal power");
     } else if(countdown === 0){
-        console.log(`Solid rocket booster ignition and liftoff!`)
+        console.log(`Rocket booster ignition: liftoff!`)
     } else{
         console.log(`T-${countdown} seconds`);
     }
@@ -78,4 +78,4 @@ while(countdown >= 0){
 // T-3 seconds
 // T-2 seconds
 // T-1 seconds
-// Solid rocket booster ignition and liftoff!
+// Rocket booster ignition: liftoff!

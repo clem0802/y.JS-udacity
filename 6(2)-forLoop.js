@@ -1,7 +1,21 @@
+// https://github.com/anumsh/Intro-To-Javascript-Quiz/blob/master/functions-quiz.txt
+// (link for the LOOP answer from Thomas Sattlecker)
 /*------------------------------*/
 for ( START; STOP; STEP ) {
     // do this thing
   }
+
+
+/*------------------------------*/
+function laugh(num){
+    var ha = "";
+    for(var i=0; i<num; i++){
+        ha += "ha";
+        string = ha+"!"
+    }
+    return string;
+}
+console.log(laugh(5)) // hahahahaha!
 
 
 /*------------------------------*/
@@ -60,16 +74,24 @@ for (var a=0; a<3; a++){
 // 2:3
 
 /*------------------------------*/ (while Loop) => (for Loop)
-var x = 9;
+var x = 4;
 while(x >= 1){
     console.log(`hello ${x}`);
     x-=1
 }
-
-
-for(var x=9; x>=1; x--){
+// hello 4
+// hello 3
+// hello 2
+// hello 1
+/*-----------*/
+for(var x=4; x>=1; x--){
     console.log(`hello ${x}`)
 }
+// hello 4
+// hello 3
+// hello 2
+// hello 1
+
 
 
 /*------------------------------*/
@@ -89,4 +111,88 @@ for(var x = 12; x > 1; x--){
 console.log(solution); // 479001600
 
 
+/*------------------------------*/
+/*------------------------------*/ (build a Triangle)
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+        line += "* -";
+    }
+    return line + "\n";
+}
+function buildTriangle(num) {
+    var pattern = "";
+    for (var i = 1; i <= num; i++) {
+        pattern += makeLine(i);
+    }
+    return pattern;
+}
+console.log(buildTriangle(10));
+// * -
+// * -* -
+// * -* -* -
+// * -* -* -* -
+// * -* -* -* -* -
+// * -* -* -* -* -* -
+// * -* -* -* -* -* -* -
+// * -* -* -* -* -* -* -* -
+// * -* -* -* -* -* -* -* -* -
+// * -* -* -* -* -* -* -* -* -* -
 
+
+
+/*------------------------------*/ (MORE and MORE)
+function line(length){
+    var bille = "°";
+    for(var i=1; i<length; i++){
+        bille += " °";
+        // string = bille + "!"
+    }
+    return bille + "\n" 
+}
+function build(num){
+    var triangle = "";
+    for(var j=1; j<num; j++){
+        triangle += line(j)
+    }
+    return triangle;
+}
+console.log(build(7)) 
+// °
+// ° °
+// ° ° °
+// ° ° ° °
+// ° ° ° ° °
+// ° ° ° ° ° °
+
+/*------------------------------*/ (LESS and LESS)
+// (cf) https://github.com/clem0802/W6-4-Loops/blob/main/3-project(thomas).js
+function line(length){
+    let icon = "";
+    for (let i=1; i<length; i++){
+        icon += "° "
+    }
+    return icon + "\n"
+}
+let lineNumbers = 6;
+while(lineNumbers >= 0){
+    console.log(line(lineNumbers));
+    lineNumbers--;
+}
+// ° ° ° ° ° °
+// ° ° ° ° ° 
+// ° ° ° °
+// ° ° ° 
+// ° ° 
+// °
+
+/*--------------------*/ (WHILE => LOOP)
+var x = 4;
+while(x >= 1){
+    console.log(`hello ${x}`);
+    x-=1
+}
+
+for(var x=4; x>=1; x--){
+    console.log(`hello ${x}`)
+}
