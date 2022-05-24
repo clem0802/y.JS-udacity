@@ -1,6 +1,8 @@
 /*--------------------------------------*/
 // check output on F12 (INSPECT)
 
+
+/*--------------------------------------*/ (toUpperCase)
 var donuts = ["jelly donut hole", "chocolate donut hole", "glazed donut hole"]
 for (var i = 0; i < donuts.length; i++) {
     donuts[i] += " hole";
