@@ -11,7 +11,6 @@ function test(element, index, array){
 }
 myArray.forEach(test);
 
-
 /*--------------------------------------*/ (forEach)
 var fruits = ["apple", "orange", "banana", "lemon", "cherry"]
 function printFruits(fruit){ // only 1 PARAMETER, the "element"
@@ -39,12 +38,41 @@ fruits.forEach(function(fruit){ // only 1 PARAMETER, the "element"
 // LEMON JUICE
 // CHERRY JUICE
 
-
 /*--------------------------------------*/ (forEach)
-words = ["cat", "and", "dog"];
+words = ["one", "cat", "and", "one", "dog"];
 words.forEach(function(elem, index, arr) {
   console.log(`Word [${index}] in "${arr.toString()}" is ${elem.toUpperCase()}`);
 });
-// Word [0] in "cat,and,dog" is CAT
-// Word [1] in "cat,and,dog" is AND
-// Word (2] in "cat,and,dog" is DOG
+// Word [0] in "one,cat,and,one,dog" is ONE
+// Word [1] in "one,cat,and,one,dog" is CAT
+// Word [2] in "one,cat,and,one,dog" is AND
+// Word [3] in "one,cat,and,one,dog" is ONE
+// Word [4] in "one,cat,and,one,dog" is DOG
+
+
+/*--------------------------------------*/ (forEach)(+100)=>(1)
+var test = [12, 3, 66, 48, 14, 99, 47];
+test.forEach(function(elem, index){
+    if(elem % 3 === 0){
+        test.splice(index,1,100)
+    }
+})
+console.log(test) // [100, 100, 100, 100, 14, 100, 47]
+
+/*--------------------------------------*/ (forEach)(+100)=>(2)
+var test = [12, 3, 66, 48, 14, 99, 47];
+// test.forEach(function(elem, index){
+//     if(elem % 3 === 0){
+//         elem += 100
+//         test.splice(index,1,elem)
+//     }
+// })
+console.log(test) // [112, 103, 166, 148, 14, 199, 47]
+
+/*--------------------------------------*/ (forEach)(+100)=>(3)
+var test = [12, 3, 66, 48, 14, 99, 47];
+var newTest = test.map(function(elem){
+    if(elem % 3 === 0)
+    return elem += 100
+})
+console.log(newTest) // [112, 103, 166, 148, undefined, 199, undefined]
