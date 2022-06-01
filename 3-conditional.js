@@ -59,13 +59,13 @@ if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || ve
 
 /*---------------------------------*/
 // change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
-Size	Width	Length	Sleeve
-S	    18"	    28"	    8.13"
-M	    20"   	29"	    8.38"
-L    	22"	    30"	    8.63"
-XL	  24"	    31"	    8.88"
-2XL	  26"	    33"	    9.63"
-3XL	  28"	    34"	    10.13"
+// Size	 Width	 Length	  Sleeve
+// S	    18"	    28"	    8.13"
+// M	    20"   	29"	    8.38"
+// L    	22"	    30"	    8.63"
+// XL	    24"	    31"	    8.88"
+// 2XL	  26"	    33"	    9.63"
+// 3XL	  28"	    34"	    10.13"
 
 var shirtWidth = 18;
 var shirtLength = 29;
