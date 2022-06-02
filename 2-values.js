@@ -7,8 +7,8 @@ true >= 0 // true
 "false" === 0 // false
 1 !== false // true
 "1" == true // true
-"1" === 1 // true
+"1" === 1 // false
 "1" !== 1 // true
 "3" > 1 //  true
-3!="3" // false
+3 != "3" // false
 
